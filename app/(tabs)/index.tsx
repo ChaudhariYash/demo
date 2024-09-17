@@ -1,13 +1,6 @@
 import React from "react";
-import {Button, Text,View} from 'react-native';
+import {Text,View} from 'react-native';
 
-
-const name = "Yash" ;
-let age = 8 ;
-function fruit()
-{
-  return 'Apple';
-}
 
 
 
@@ -15,18 +8,37 @@ const App = () =>
 {
   return(
     <View>
-      <Text style={{fontSize:30}}> Hello Word</Text>
-      <Text style={{fontSize:30}}> {fruit()}  </Text>
-      <Text style={{fontSize:30}}> {name}  </Text>
-      <Text style={{fontSize:30}}> {age}  </Text>
-      <Text style={{fontSize:30}}> {100*2}  </Text>
-      <Text style={{fontSize:30}}> {age===39?"above 30":"unknow age"}</Text>
-
-    
-      <Button title ='Press Here' />
-
-    </View>
+     
+      <Text style={{fontSize:30}}>Componenet</Text>
+      <Userdata/>
+      </View>
   )
 } 
+
+
+const Userdata = () => 
+  {
+    return(
+      <View>
+         <CompanyData/>
+        <Text style={{fontSize:30}}>Name:Yash</Text>
+        <Text style={{fontSize:30}}>Age:23</Text>
+        <Text style={{fontSize:30}}>Email:Yashchaudhari887@gmail.com</Text>
+        <Text style={{fontSize:30}}>Loction : Pune</Text>
+      </View>
+    )
+  }
+
+  const CompanyData = () => 
+    {
+      return(
+        <View>
+          <Text style={{fontSize:30}}>Name:Tipu</Text>
+          <Text style={{fontSize:30}}>Age:27</Text>
+          <Text style={{fontSize:30}}>Email:Tipusingh@gmail.com</Text>
+          <Text style={{fontSize:30}}>Loction :Pune</Text>
+        </View>
+      )
+    }
 
 export default App;
