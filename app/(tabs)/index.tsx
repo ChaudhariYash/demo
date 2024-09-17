@@ -1,13 +1,16 @@
 import React from "react";
-import {Text,View} from 'react-native';
+import {Button, Text,View} from 'react-native';
 
 const App = () => 
 {
   return(
     <View>
-      <Text> hello word </Text>
+      <Text style={{fontSize:30}}> Hello Word </Text>
+      <Text style={{fontSize:30}}> Hello secong text componenet  </Text>
+      <Button title ='Press Here' />
+
     </View>
   )
-}
+} 
 
 export default App;
