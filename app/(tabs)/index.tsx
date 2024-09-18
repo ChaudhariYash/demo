@@ -1,25 +1,30 @@
-import React, { useState } from "react";
-import { Button, Text, View } from "react-native";
+import React from "react";
+import { Text, View ,StyleSheet} from "react-native";
 
 const App = () => {
- const[name,setName]=useState("tipu")
   return (
-    <View>
-      <Text style={{ fontSize: 30 }}>Props in react js </Text>
-      <Button title=" update props"  onPress={()=>setName("chaudhari")}/>
-      <User name={name} age ={23}/>
+    <View style={{flex:1,backgroundColor:'white',paddingTop:200}}>
+      <Text style={{ fontSize: 30 }}>style in react native</Text>
+      <Text style={Styles.textbox}>style in react native</Text>
     </View>
   );
 };
 
-const User = (props) => {
- 
-  return (
-    <View style={{backgroundColor:'green', padding:5}}>
-      <Text style={{ fontSize: 30 }}> {props.name}</Text>
-      <Text style={{ fontSize: 30 }}> {props.age}</Text>
-    </View>
-  );
-};
 
+const Styles = StyleSheet.create 
+({
+  textbox:
+  {
+      fontSize:30,
+      padding:5,
+      backgroundColor:'lightblue',
+      color:'black',
+      margin:5,
+      borderRadius:6,
+      borderColor:"red",
+      borderWidth:2,
+      textAlign:'center',
+
+  },
+})
 export default App;
