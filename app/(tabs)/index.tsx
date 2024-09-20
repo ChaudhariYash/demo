@@ -49,51 +49,32 @@ const App = () => {
       id: 10,
       name: "pranav",
     },
-    {
-      id: 11,
-      name: "Ameya",
-    },
-    {
-      id: 12,
-      name: "harshal",
-    },
-    {
-      id: 13,
-      name: "dipesh",
-    },
-    {
-      id: 14,
-      name: "Ranjeet",
-    },
-    {
-      id: 15,
-      name: "lalit",
-    },
-    {
-      id: 16,
-      name: "Vinay",
-    },
+   
     
   ];
   return <View>
-    <Text style={{fontSize:30}}> List with map Function</Text>
-    <ScrollView>
+    <Text style={{fontSize:30}}>Grid with dynamic data</Text>
+   <View style={{flex:1,flexDirection:"row",flexWrap:"wrap"}}>
     {
       users.map((item)=><Text style={styles.item}>{item.name}</Text>)
     }
-   </ScrollView>
+   </View>
   </View>;
 };
 
 const styles = StyleSheet.create({
   item: {
-    fontSize: 20,
-    padding: 10,
-    color: "white",
-    backgroundColor: "green",
-    borderColor: "black",
-    borderWidth: 1,
-    margin: 10,
+    fontSize:25,
+    backgroundColor:"blue",
+    color:"white",
+    margin:5,
+    padding:5,
+    width:120,
+    height:120,
+   textAlignVertical:'center',
+   textAlign:'center',
+
+
   },
 });
 
