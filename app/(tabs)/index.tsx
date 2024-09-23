@@ -1,65 +1,85 @@
-import React  from "react";
-import {Text,View,StyleSheet} from "react-native";
+import React from "react";
+import { StyleSheet, Text, TouchableHighlight, View} from "react-native";
 
-const App = () =>{
- 
-  return(
-    <View style={styles.main}>
-    <View style={styles.box1}>
-      <View style={styles.innerBox1}></View>
-      <View style={styles.innerBox2}></View>
-      <View style={styles.innerBox3}></View>
-    </View>
-    <View style={styles.box2}></View>
-    <View style={styles.box3}></View>
-    </View>
+const App = () => {
+  return (
+    <View style = {styles.main}>
+      <TouchableHighlight style={styles.demo}>
+                <Text style={styles.button}>Button</Text>
+      </TouchableHighlight>
+
+      <TouchableHighlight>
+                <Text style={[styles.button,styles.success]}>Success</Text>
+      </TouchableHighlight>
+
+      <TouchableHighlight>
+                <Text style={[styles.button,styles.Warning]}>Warning</Text>
+      </TouchableHighlight>
+
+      <TouchableHighlight>
+                <Text style={[styles.button,styles.primary]}>Primary</Text>
+      </TouchableHighlight>
+
+      <TouchableHighlight>
+                <Text style={[styles.button,styles.error]}>Error</Text>
+      </TouchableHighlight>
+      
      
-  
-  )
-}
+    </View>
+  );
+};
 
-const styles = StyleSheet.create
+const styles=StyleSheet.create
 ({
-  main:{
+main:
+{
     flex:1,
-    //  flexDirection:'row',
-  },
-  box1:
-  {
-      flex:2,
-      backgroundColor:"red",
-      flexDirection:'row',
-  },
-  box2:
-  {
-      flex:1,
-      backgroundColor:"yellow"
-  },
-  box3:
-  {
-      flex:1,
-      backgroundColor:"blue"
-  },
-  innerBox1:
-  {  
-       flex:1,
-      backgroundColor:"orange",
-      margin:10
-  },
-  innerBox2:
-  {  
-       flex:1,
-      backgroundColor:"pink",
-      margin:10
-  },
-  innerBox3:
-  {  
-       flex:1,
-      backgroundColor:"skyblue",
-      margin:10
-  },
+    backgroundColor:'white'
+
+},
+button:
+{
+  backgroundColor:"gray",
+  color:"white",
+  fontSize:24,
+  textAlign:"center",
+  padding:10,
+  margin:10,
+ 
+  marginTop:40,
+  borderWidth:2,
+  borderColor:"black",
+  borderRadius:10,
+  shadowColor:"red",
+  elevation:1,
+  shadowOpacity:1,
+
+},
+demo:
+{
+  marginTop:100,
+},
+success:
+{
+   color:"yellow",
+   backgroundColor:"green"
+},
+Warning:
+{
+   color:"blue",
+   backgroundColor:"yellow",
+},
+primary:
+{
+   color:"white",
+   backgroundColor:"blue",
+},
+error:
+{
+   color:"white",
+   backgroundColor:"red",
+},
+
 })
 
-
 export default App;
-  
