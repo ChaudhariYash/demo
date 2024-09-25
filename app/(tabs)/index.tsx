@@ -5,7 +5,7 @@ const App = () => {
   return (
     <View >
      
-      
+      <Text>Redio Button </Text>
      
     </View>
   );
