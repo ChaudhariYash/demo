@@ -1,12 +1,22 @@
-import React, { useState } from "react";
-import { Text, View } from "react-native";
+import React from "react";
+import { Text, View ,StyleSheet } from "react-native";
 
 const App = () => {
   return (
     <View>
-      <Text>hello word</Text>
+      <Text style={Styles.main}>Login </Text>
     </View>
   );
 };
+
+const Styles =StyleSheet.create({
+  main:{
+    fontSize:30,
+    color :"red",
+    textAlign:"center",
+    marginTop:250,
+
+  },
+})
 
 export default App;
