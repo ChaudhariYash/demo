@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import { Text, View,StyleSheet,ActivityIndicator, Button} from "react-native";
+import { Text, View,StyleSheet,Button, Modal} from "react-native";
 
 const App = () => {
-const [show,setShow]=useState(false);
-  
- const  display = ()=>
-  {
-      setShow(true);
-      setTimeout(()=>
-        {
-            setShow(false)
-        },2000);
-  }
+
 
   return (
     <View style={styles.main}>
-      <ActivityIndicator size="large" color="green" animating={show}/>
-      <Button title="Show Loader" onPress={display} />
+      <Modal 
+       transparent={true}>
+        <View style={styles.centerview}>
+            <View>
+              <Text>Hello code step by step </Text>
+            </View>
+        </View>
+      </Modal>
+      <View style={styles.button}>
+     <Button title="Open Modal"/>
+     </View>
     </View>
   );
 }; 
@@ -26,8 +26,19 @@ const styles = StyleSheet.create
   main:
   {
     flex:1,
-    alignItems:"center",
+ 
+  },
+  button:{
+ flex:1,
+ justifyContent:"center",
+
+  },
+  centerview:
+  {
+    flex:1,
     justifyContent:"center",
+    alignItems:"center",
+    margin:10,
     
   },
 })
