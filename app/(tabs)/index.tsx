@@ -10,7 +10,7 @@ const App = () => {
        transparent={true}>
         <View style={styles.centerview}>
             <View>
-              <Text>Hello code step by step </Text>
+              <Text>Hello code by yash chaudhari </Text>
             </View>
         </View>
       </Modal>
