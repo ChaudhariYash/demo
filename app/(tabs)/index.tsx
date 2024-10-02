@@ -42,6 +42,8 @@ const Styles = StyleSheet.create
      padding:20,
      justifyContent:"flex-end",
      borderRadius:10,
+     color:"red",
+     
   },
 })
 export default App;
