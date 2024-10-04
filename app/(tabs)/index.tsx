@@ -5,7 +5,7 @@ const App = () => {
 
   return (
      <View>
-   <Text>  </Text>
+   <Text> React native navigation stack,drower</Text>
     </View>
   )
 }
