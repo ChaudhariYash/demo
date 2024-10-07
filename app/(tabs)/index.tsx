@@ -5,7 +5,7 @@ const App = () => {
 
   return (
      <View>
-   <Text> React native Navigation </Text>
+   <Text> React native </Text>
     </View>
   )
 }
