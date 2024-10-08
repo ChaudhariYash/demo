@@ -5,7 +5,7 @@ const App = () => {
 
   return (
      <View>
-   <Text> React native </Text>
+   <Text> All cleare this code  </Text>
     </View>
   )
 }
